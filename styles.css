@@ -5,6 +5,17 @@
 html {
   scroll-behavior: smooth;
 }
+.headest {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.headest img {
+  width: 38px;
+  height: 38px;
+  max-width: 268px;
+  opacity: 1;
+}
 nav {
   padding: 24px 56px;
   /* position: sticky;
@@ -24,6 +35,9 @@ nav {
   font-weight: 600;
   /* letter-spacing: 30px; */
   line-height: -0.5px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
 .searchbar-wrapper {
@@ -31,7 +45,9 @@ nav {
   align-items: center;
   width: 448px;
   padding: 9px;
+  height: 24px;
   border-radius: 30px;
+  background-color: #ffffff;
 }
 
 .searchbar-wrapper svg {
@@ -41,13 +57,16 @@ nav {
   flex-shrink: 0;
 }
 
-.searchbar-wrapper input {
+#input1 {
   border: none;
   outline: none;
   padding: 9px 9px;
   flex: 1;
   background: transparent;
   font-size: 13px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 .navlinks {
   display: flex;
@@ -60,6 +79,9 @@ nav {
   line-height: 24px;
   color: #5a4137;
   text-decoration: none;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
 .myaccount {
@@ -73,6 +95,15 @@ nav {
   width: 14px;
   height: 16px;
   color: #1c1b1b;
+}
+.icn-btn-cont {
+  background-color: #ffffff;
+  width: 14px;
+  height: 16px;
+  border-radius: 10px;
+}
+.icn-btn {
+  border: none;
 }
 
 .choptrayModal {
@@ -660,7 +691,7 @@ nav {
   padding-top: 7px;
 }
 
-.search-div input {
+#input2 {
   display: flex;
   flex-direction: column;
   padding-top: 7px;
@@ -948,8 +979,6 @@ nav {
 
 #mealsGrid {
   padding: 0px 56px 40px 56px;
-  width: 1050px;
-  height: 815px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
@@ -1357,7 +1386,7 @@ footer {
   flex-direction: row;
   width: 268px;
   height: 30px;
-  gap: 4px; 
+  gap: 4px;
 }
 
 .footer-chop img {
@@ -1672,4 +1701,17 @@ footer {
   line-height: 16px;
   letter-spacing: 0.13px;
   vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  #mealsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  #mealsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
