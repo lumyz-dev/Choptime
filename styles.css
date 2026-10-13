@@ -3,8 +3,13 @@
   padding: 0;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
+} 
+
+body {max-width: 1800px;
+  background-color: #fcf9f8;
 }
+
 .headest {
   display: flex;
   flex-direction: row;
